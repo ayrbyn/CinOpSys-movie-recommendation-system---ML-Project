@@ -1,0 +1,171 @@
+# CinOpSys - Movie Recommendation System
+# .gitignore file
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook config
+.jupyter/
+
+# ============================================
+# Data Files - Download from Kaggle
+# ============================================
+# Dataset source: https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags
+
+# Raw dataset (large files)
+mpst_full_data.csv
+mpst_full_data.csv.zip
+
+# Processed/cleaned data
+movies_clean.csv
+
+# Generated embeddings
+movie_embeddings.npy
+
+# Checkpoint files
+encoding_checkpoint.npz
+
+# Any other CSV files
+*.csv
+
+# Any other numpy files
+*.npy
+
+# Any ZIP archives
+*.zip
+
+# ============================================
+# Streamlit
+# ============================================
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ============================================
+# IDE & Editors
+# ============================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.log.*
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# Testing
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ============================================
+# Project Specific
+# ============================================
+# Screenshots folder (optional - uncomment if you want to commit screenshots)
+# screenshots/
+
+# Model cache
+models/
+
+# Temporary outputs
+outputs/
+temp/
