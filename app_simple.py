@@ -8,6 +8,8 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import time
+import gdown
+import os
 
 # Page config
 st.set_page_config(
@@ -18,6 +20,18 @@ st.set_page_config(
 
 # Load data
 @st.cache_resource
+def download_file_if_needed():
+    files = {
+        "movies_clean.csv": "1Vrj0JHG6VOZ8K2KXQqY8G1IUl_PRhgi-"
+    }
+
+    for filename, file_id in files.items():
+        if not os.path.exists(filename):
+            url = f"https://drive.google.com/uc?id={file_id}"
+            gdown.download(url, filename, quiet=False)
+
+download_file_if_needed()
+
 def load_data():
     try:
         embeddings = np.load('movie_embeddings.npy')
