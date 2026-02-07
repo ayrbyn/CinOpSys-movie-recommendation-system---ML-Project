@@ -55,6 +55,17 @@ st.title("CinOpSys")
 st.markdown("Content-Based Movie Recommendation System")
 st.markdown("---")
 
+# Sidebar
+with st.sidebar:
+    st.header("Settings")
+    top_k = st.slider("Number of Recommendations", 1, 50, 10)
+    min_sim = st.slider("Minimum Similarity", 0.0, 1.0, 0.0, 0.05)
+    synopsis_len = st.slider("Synopsis Length", 100, 500, 300, 50)
+    
+    st.markdown("---")
+    st.metric("Total Movies", f"{len(metadata):,}")
+
+
 # Search
 st.header("Search Movie")
 col1, col2 = st.columns([3, 1])
